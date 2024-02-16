@@ -1,0 +1,2 @@
+/usr/bin/ar qc libextendables.a CMakeFiles/extendables.dir/plugin.cpp.o CMakeFiles/extendables.dir/pluginManager.cpp.o
+/usr/bin/ranlib libextendables.a

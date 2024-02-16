@@ -7,5 +7,5 @@ public:
     CmdParser(std::vector<ImgProcessor*> &processors);
     ~CmdParser();
 
-    void parse(std::string args);
+    void parse(std::vector<std::string> args);
 };

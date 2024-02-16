@@ -1,3 +1,4 @@
+#pragma once
 #include "../dependencies/cimg.h"
 #include <string>
 #include <vector>
@@ -11,7 +12,7 @@ public:
     virtual bool processImg(Image& img, std::string& arguments) = 0;
 
     //argument to call this processor
-    std::string getMainArg();
+    virtual std::string getMainArg() = 0;
     //additionnal arguments that can be given to this processor after its main call
-    virtual std::vector<std::string> getSubArgs();
+    virtual std::vector<std::string> getSubArgs() = 0;
 };

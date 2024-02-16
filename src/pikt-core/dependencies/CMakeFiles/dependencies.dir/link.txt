@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdependencies.a 
+/usr/bin/ranlib libdependencies.a

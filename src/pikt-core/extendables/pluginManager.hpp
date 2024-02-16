@@ -1,3 +1,4 @@
+#pragma once
 #include "plugin.hpp"
 #include <map>
 #include <memory>

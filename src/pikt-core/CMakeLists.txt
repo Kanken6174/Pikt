@@ -7,10 +7,12 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
 
 project(pikt)
 
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../../bin")
+
 set(local_source_files
     main.cpp
-    loader.cpp
-    loader.hpp
+    cmdParser.cpp
+    cmdParser.hpp
 )
 
 add_subdirectory(extendables)
