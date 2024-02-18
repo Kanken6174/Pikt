@@ -1,9 +1,27 @@
 #include "pluginManager.hpp"
 #include <iostream>
+#include <stdio.h>  /* defines FILENAME_MAX */
+#ifdef WINDOWS
+    #include <direct.h>
+    #define GetCurrentDir _getcwd
+#else
+    #include <unistd.h>
+    #define GetCurrentDir getcwd
+ #endif
 
 PluginManager::PluginManager(){
+
+    char cCurrentPath[FILENAME_MAX];
+
+    if (!GetCurrentDir(cCurrentPath, sizeof(cCurrentPath)))
+    {
+        throw std::runtime_error("unable to get the app's absolute path");
+    }
+
+    cCurrentPath[sizeof(cCurrentPath) - 1] = '\0'; 
+
     // Path to the folder
-    fs::path folder_path = "./plugins";
+    fs::path folder_path = (std::string(cCurrentPath)+std::string("/plugins")).c_str();
 
     // Check if the folder exists
     if (fs::exists(folder_path) && fs::is_directory(folder_path)) {
@@ -19,6 +37,7 @@ PluginManager::PluginManager(){
             }
         }
         std::cout <<"finished importing plugins" << std::endl;
+        std::cout << "loaded " << plugins.size() << " plugins" << std::endl;
     }
     else {
         std::cout << "Folder does not exist\n";
