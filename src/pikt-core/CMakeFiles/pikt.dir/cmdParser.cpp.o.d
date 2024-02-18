@@ -1,9 +1,9 @@
 CMakeFiles/pikt.dir/cmdParser.cpp.o: \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.cpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.cpp \
  /usr/include/stdc-predef.h \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/pluginManager.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/plugin.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/pluginManager.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/plugin.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -180,8 +180,8 @@ CMakeFiles/pikt.dir/cmdParser.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/imgProcessor.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/../dependencies/cimg.h \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/imgProcessor.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \

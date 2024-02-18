@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-core
+CMAKE_SOURCE_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-core
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-core
+CMAKE_BINARY_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-core
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables//CMakeFiles/progress.marks
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles 0
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables//CMakeFiles/progress.marks
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/clean
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/preinstall
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/preinstall
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 extendables/CMakeFiles/extendables.dir/rule:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/CMakeFiles/extendables.dir/rule
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendables/CMakeFiles/extendables.dir/rule
 .PHONY : extendables/CMakeFiles/extendables.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ extendables: extendables/CMakeFiles/extendables.dir/rule
 
 # fast build rule for target.
 extendables/fast:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/build
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/build
 .PHONY : extendables/fast
 
 plugin.o: plugin.cpp.o
@@ -135,7 +135,7 @@ plugin.o: plugin.cpp.o
 
 # target to build an object file
 plugin.cpp.o:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.o
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.o
 .PHONY : plugin.cpp.o
 
 plugin.i: plugin.cpp.i
@@ -143,7 +143,7 @@ plugin.i: plugin.cpp.i
 
 # target to preprocess a source file
 plugin.cpp.i:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.i
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.i
 .PHONY : plugin.cpp.i
 
 plugin.s: plugin.cpp.s
@@ -151,7 +151,7 @@ plugin.s: plugin.cpp.s
 
 # target to generate assembly for a file
 plugin.cpp.s:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.s
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/plugin.cpp.s
 .PHONY : plugin.cpp.s
 
 pluginManager.o: pluginManager.cpp.o
@@ -159,7 +159,7 @@ pluginManager.o: pluginManager.cpp.o
 
 # target to build an object file
 pluginManager.cpp.o:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o
 .PHONY : pluginManager.cpp.o
 
 pluginManager.i: pluginManager.cpp.i
@@ -167,7 +167,7 @@ pluginManager.i: pluginManager.cpp.i
 
 # target to preprocess a source file
 pluginManager.cpp.i:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.i
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.i
 .PHONY : pluginManager.cpp.i
 
 pluginManager.s: pluginManager.cpp.s
@@ -175,7 +175,7 @@ pluginManager.s: pluginManager.cpp.s
 
 # target to generate assembly for a file
 pluginManager.cpp.s:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.s
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(MAKE) $(MAKESILENT) -f extendables/CMakeFiles/extendables.dir/build.make extendables/CMakeFiles/extendables.dir/pluginManager.cpp.s
 .PHONY : pluginManager.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

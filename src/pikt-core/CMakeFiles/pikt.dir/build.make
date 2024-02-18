@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-core
+CMAKE_SOURCE_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-core
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-core
+CMAKE_BINARY_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-core
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pikt.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/pikt.dir/flags.make
 CMakeFiles/pikt.dir/main.cpp.o: CMakeFiles/pikt.dir/flags.make
 CMakeFiles/pikt.dir/main.cpp.o: main.cpp
 CMakeFiles/pikt.dir/main.cpp.o: CMakeFiles/pikt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pikt.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pikt.dir/main.cpp.o -MF CMakeFiles/pikt.dir/main.cpp.o.d -o CMakeFiles/pikt.dir/main.cpp.o -c /home/kanken/code/cpp-adv/Pikt/src/pikt-core/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pikt.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pikt.dir/main.cpp.o -MF CMakeFiles/pikt.dir/main.cpp.o.d -o CMakeFiles/pikt.dir/main.cpp.o -c /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/main.cpp
 
 CMakeFiles/pikt.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikt.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/Pikt/src/pikt-core/main.cpp > CMakeFiles/pikt.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/main.cpp > CMakeFiles/pikt.dir/main.cpp.i
 
 CMakeFiles/pikt.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikt.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/Pikt/src/pikt-core/main.cpp -o CMakeFiles/pikt.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/main.cpp -o CMakeFiles/pikt.dir/main.cpp.s
 
 CMakeFiles/pikt.dir/cmdParser.cpp.o: CMakeFiles/pikt.dir/flags.make
 CMakeFiles/pikt.dir/cmdParser.cpp.o: cmdParser.cpp
 CMakeFiles/pikt.dir/cmdParser.cpp.o: CMakeFiles/pikt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pikt.dir/cmdParser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pikt.dir/cmdParser.cpp.o -MF CMakeFiles/pikt.dir/cmdParser.cpp.o.d -o CMakeFiles/pikt.dir/cmdParser.cpp.o -c /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pikt.dir/cmdParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pikt.dir/cmdParser.cpp.o -MF CMakeFiles/pikt.dir/cmdParser.cpp.o.d -o CMakeFiles/pikt.dir/cmdParser.cpp.o -c /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.cpp
 
 CMakeFiles/pikt.dir/cmdParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pikt.dir/cmdParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.cpp > CMakeFiles/pikt.dir/cmdParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.cpp > CMakeFiles/pikt.dir/cmdParser.cpp.i
 
 CMakeFiles/pikt.dir/cmdParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pikt.dir/cmdParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.cpp -o CMakeFiles/pikt.dir/cmdParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.cpp -o CMakeFiles/pikt.dir/cmdParser.cpp.s
 
 # Object files for target pikt
 pikt_OBJECTS = \
@@ -105,17 +105,17 @@ pikt_OBJECTS = \
 # External object files for target pikt
 pikt_EXTERNAL_OBJECTS =
 
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/main.cpp.o
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/cmdParser.cpp.o
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/build.make
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: extendables/libextendables.a
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: dependencies/libdependencies.a
-/home/kanken/code/cpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/kanken/code/cpp-adv/Pikt/bin/pikt"
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/main.cpp.o
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/cmdParser.cpp.o
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/build.make
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: extendables/libextendables.a
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: dependencies/libdependencies.a
+/home/kanken/code/tcpp-adv/Pikt/bin/pikt: CMakeFiles/pikt.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/kanken/code/tcpp-adv/Pikt/bin/pikt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pikt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/pikt.dir/build: /home/kanken/code/cpp-adv/Pikt/bin/pikt
+CMakeFiles/pikt.dir/build: /home/kanken/code/tcpp-adv/Pikt/bin/pikt
 .PHONY : CMakeFiles/pikt.dir/build
 
 CMakeFiles/pikt.dir/clean:
@@ -123,6 +123,6 @@ CMakeFiles/pikt.dir/clean:
 .PHONY : CMakeFiles/pikt.dir/clean
 
 CMakeFiles/pikt.dir/depend:
-	cd /home/kanken/code/cpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/cpp-adv/Pikt/src/pikt-core /home/kanken/code/cpp-adv/Pikt/src/pikt-core /home/kanken/code/cpp-adv/Pikt/src/pikt-core /home/kanken/code/cpp-adv/Pikt/src/pikt-core /home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles/pikt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kanken/code/tcpp-adv/Pikt/src/pikt-core && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kanken/code/tcpp-adv/Pikt/src/pikt-core /home/kanken/code/tcpp-adv/Pikt/src/pikt-core /home/kanken/code/tcpp-adv/Pikt/src/pikt-core /home/kanken/code/tcpp-adv/Pikt/src/pikt-core /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/CMakeFiles/pikt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pikt.dir/depend
 

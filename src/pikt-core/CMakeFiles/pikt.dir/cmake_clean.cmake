@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/kanken/code/cpp-adv/Pikt/bin/pikt"
-  "/home/kanken/code/cpp-adv/Pikt/bin/pikt.pdb"
+  "/home/kanken/code/tcpp-adv/Pikt/bin/pikt"
+  "/home/kanken/code/tcpp-adv/Pikt/bin/pikt.pdb"
   "CMakeFiles/pikt.dir/cmdParser.cpp.o"
   "CMakeFiles/pikt.dir/cmdParser.cpp.o.d"
   "CMakeFiles/pikt.dir/main.cpp.o"

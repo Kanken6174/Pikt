@@ -1,10 +1,10 @@
 CMakeFiles/pikt_basics.dir/_factory.cpp.o: \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/_factory.cpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/_factory.cpp \
  /usr/include/stdc-predef.h \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/cimgSaver.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/cimgLoader.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/../pikt-core/extendables/imgProcessor.hpp \
- /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/../pikt-core/extendables/../dependencies/cimg.h \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/cimgSaver.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/cimgLoader.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/../pikt-core/extendables/imgProcessor.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/../pikt-core/extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

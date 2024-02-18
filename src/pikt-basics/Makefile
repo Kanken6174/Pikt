@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-basics
+CMAKE_SOURCE_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/cpp-adv/Pikt/src/pikt-basics
+CMAKE_BINARY_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/CMakeFiles /home/kanken/code/cpp-adv/Pikt/src/pikt-basics//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/CMakeFiles /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/Pikt/src/pikt-basics/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

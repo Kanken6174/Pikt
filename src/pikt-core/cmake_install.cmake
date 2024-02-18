@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanken/code/cpp-adv/Pikt/src/pikt-core
+# Install script for directory: /home/kanken/code/tcpp-adv/Pikt/src/pikt-core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/cmake_install.cmake")
-  include("/home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cmake_install.cmake")
+  include("/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/cmake_install.cmake")
+  include("/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kanken/code/cpp-adv/Pikt/src/pikt-core/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

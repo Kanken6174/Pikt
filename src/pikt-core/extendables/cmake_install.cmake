@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables
+# Install script for directory: /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

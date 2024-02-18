@@ -4,8 +4,8 @@
 
 class ImgProcessor{
 public:
-    ImgProcessor();
-    virtual ~ImgProcessor();
+    ImgProcessor(){}
+    virtual ~ImgProcessor(){}
 
     //this function will directly edit the input image and arguments for the next one to receive.
     virtual bool processImg(Image& img, std::vector<std::string>& arguments) = 0;
