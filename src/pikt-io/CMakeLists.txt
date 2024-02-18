@@ -12,4 +12,4 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../bin/plugins/)
 
 ADD_LIBRARY(pikt_io SHARED ${local_src})
 
-target_link_libraries(pikt_io)
+target_link_libraries(pikt_io png)

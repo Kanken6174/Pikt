@@ -1,4 +1,5 @@
 #include "cmdParser.hpp"
+#include <iostream>
 
 CmdParser::CmdParser(std::vector<ImgProcessor *> &processors)
 {
@@ -21,6 +22,8 @@ void CmdParser::parse(std::vector<std::string> args)
     Image img;  //image is initially voided, it will need to be loaded by the first plugin
     for(auto& p : _processors){
         if(p.first == args.at(0)){
+            args.erase(args.begin());
+            std::cout << "Processing " << p.first << std::endl;
             p.second->processImg(img,args);   //pass and "take" arguments
             //args.erase(args.begin());
         }

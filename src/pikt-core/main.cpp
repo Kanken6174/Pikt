@@ -17,6 +17,7 @@ int main(int argc, char* argv[]) {
 
     if (argc > 1) {
         all_args.assign(argv + 1, argv + argc);
+        parser.parse(all_args);
     }
 
     return 0;

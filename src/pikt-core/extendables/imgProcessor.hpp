@@ -1,3 +1,4 @@
+#define cimg_use_png
 #include "../dependencies/cimg.h"
 #include <string>
 #include <vector>

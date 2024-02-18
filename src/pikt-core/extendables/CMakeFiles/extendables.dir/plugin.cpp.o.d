@@ -255,6 +255,7 @@ extendables/CMakeFiles/extendables.dir/plugin.cpp.o: \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/dlfcn.h \
- /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
+ /usr/include/X11/keysymdef.h /usr/include/png.h \
+ /usr/include/pnglibconf.h /usr/include/pngconf.h /usr/include/setjmp.h \
+ /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
  /usr/include/x86_64-linux-gnu/bits/dl_find_object.h
