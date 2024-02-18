@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
 set(local_src
     _factory.cpp
     grayscale.hpp
+    sepia.hpp
 )
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../bin/plugins/)
 
