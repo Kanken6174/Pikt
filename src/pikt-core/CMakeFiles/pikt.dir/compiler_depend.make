@@ -322,6 +322,10 @@ CMakeFiles/pikt.dir/cmdParser.cpp.o: cmdParser.cpp \
   /usr/include/X11/Xutil.h \
   /usr/include/X11/keysym.h \
   /usr/include/X11/keysymdef.h \
+  /usr/include/png.h \
+  /usr/include/pnglibconf.h \
+  /usr/include/pngconf.h \
+  /usr/include/setjmp.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
@@ -658,6 +662,10 @@ CMakeFiles/pikt.dir/main.cpp.o: main.cpp \
   /usr/include/X11/Xutil.h \
   /usr/include/X11/keysym.h \
   /usr/include/X11/keysymdef.h \
+  /usr/include/png.h \
+  /usr/include/pnglibconf.h \
+  /usr/include/pngconf.h \
+  /usr/include/setjmp.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
@@ -696,9 +704,15 @@ main.cpp:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/setjmp.h:
+
 /usr/include/c++/11/bits/stl_map.h:
 
-/usr/include/c++/11/bits/stl_tree.h:
+/usr/include/pngconf.h:
+
+/usr/include/pnglibconf.h:
 
 /usr/include/X11/keysymdef.h:
 
@@ -795,6 +809,8 @@ main.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/png.h:
 
 /usr/include/strings.h:
 

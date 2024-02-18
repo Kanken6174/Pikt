@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-io
+CMAKE_SOURCE_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-io
+CMAKE_BINARY_DIR = /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/CMakeFiles /home/kanken/code/tcpp-adv/Pikt/src/pikt-io//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/CMakeFiles /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pikt_io
+# Target rules for targets named pikt_basics
 
 # Build rule for target.
-pikt_io: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pikt_io
-.PHONY : pikt_io
+pikt_basics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pikt_basics
+.PHONY : pikt_basics
 
 # fast build rule for target.
-pikt_io/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_io.dir/build.make CMakeFiles/pikt_io.dir/build
-.PHONY : pikt_io/fast
+pikt_basics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_basics.dir/build.make CMakeFiles/pikt_basics.dir/build
+.PHONY : pikt_basics/fast
 
 _factory.o: _factory.cpp.o
 .PHONY : _factory.o
 
 # target to build an object file
 _factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_io.dir/build.make CMakeFiles/pikt_io.dir/_factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_basics.dir/build.make CMakeFiles/pikt_basics.dir/_factory.cpp.o
 .PHONY : _factory.cpp.o
 
 _factory.i: _factory.cpp.i
@@ -142,7 +142,7 @@ _factory.i: _factory.cpp.i
 
 # target to preprocess a source file
 _factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_io.dir/build.make CMakeFiles/pikt_io.dir/_factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_basics.dir/build.make CMakeFiles/pikt_basics.dir/_factory.cpp.i
 .PHONY : _factory.cpp.i
 
 _factory.s: _factory.cpp.s
@@ -150,7 +150,7 @@ _factory.s: _factory.cpp.s
 
 # target to generate assembly for a file
 _factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_io.dir/build.make CMakeFiles/pikt_io.dir/_factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt_basics.dir/build.make CMakeFiles/pikt_basics.dir/_factory.cpp.s
 .PHONY : _factory.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... pikt_io"
+	@echo "... pikt_basics"
 	@echo "... _factory.o"
 	@echo "... _factory.i"
 	@echo "... _factory.s"

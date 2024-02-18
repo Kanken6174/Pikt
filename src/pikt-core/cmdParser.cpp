@@ -19,13 +19,19 @@ CmdParser::~CmdParser()
 //args should be one command per cell
 void CmdParser::parse(std::vector<std::string> args)
 {
-    Image img;  //image is initially voided, it will need to be loaded by the first plugin
-    for(auto& p : _processors){
-        if(p.first == args.at(0)){
-            args.erase(args.begin());
-            std::cout << "Processing " << p.first << std::endl;
-            p.second->processImg(img,args);   //pass and "take" arguments
-            //args.erase(args.begin());
+    std::cout << "parsing with " << args.size() << " arguments" << std::endl;
+    std::cout << "and " << _processors.size() << " processors" << std::endl;
+    Image img;  //image is initially nulled, it will need to be loaded by the first plugin
+    int it = 0;
+    while(!args.empty()){
+        for(auto& p : _processors){
+            if(p.first == args.front()){
+                args.erase(args.begin());  //remove the command from the list
+                p.second->processImg(img,args);   //pass and "take" arguments
+                std::cout << "---------------------------iteration " << it << std::endl;
+                it++;
+                break;
+            }
         }
     }
 }

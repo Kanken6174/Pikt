@@ -8,9 +8,10 @@ int main(int argc, char* argv[]) {
     std::vector<ImgProcessor*> processors;
     std::cout << "loading processors..." << std::endl;
     for(auto& pl : plugins){
-        processors = pl.second.get()->loadProcessors();
+        std::vector<ImgProcessor*> v = pl.second.get()->loadProcessors();
+        processors.insert(processors.end(), v.begin(), v.end());
     }
-    std::cout << "processor loading done" << std::endl;
+    std::cout << "processor loading done, " << processors.size() << " processors loaded" << std::endl;
     CmdParser parser(processors);
 
     std::vector<std::string> all_args;

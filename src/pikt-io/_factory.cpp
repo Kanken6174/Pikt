@@ -7,7 +7,7 @@ extern "C" {
         std::cout << "pikt-io factory called" << std::endl;
         std::vector<ImgProcessor*> dv;  
         dv.push_back(new CImgLoader()); //add all processors from this plugin here
-        dv.push_back(new CImgSaver());
+        dv.push_back(new Grayscale());
         return dv;
     }
 }

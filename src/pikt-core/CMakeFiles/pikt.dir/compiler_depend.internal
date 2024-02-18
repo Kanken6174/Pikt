@@ -323,6 +323,10 @@ CMakeFiles/pikt.dir/cmdParser.cpp.o
  /usr/include/X11/Xutil.h
  /usr/include/X11/keysym.h
  /usr/include/X11/keysymdef.h
+ /usr/include/png.h
+ /usr/include/pnglibconf.h
+ /usr/include/pngconf.h
+ /usr/include/setjmp.h
  /usr/include/c++/11/map
  /usr/include/c++/11/bits/stl_tree.h
  /usr/include/c++/11/bits/stl_map.h
@@ -660,6 +664,10 @@ CMakeFiles/pikt.dir/main.cpp.o
  /usr/include/X11/Xutil.h
  /usr/include/X11/keysym.h
  /usr/include/X11/keysymdef.h
+ /usr/include/png.h
+ /usr/include/pnglibconf.h
+ /usr/include/pngconf.h
+ /usr/include/setjmp.h
  /usr/include/c++/11/map
  /usr/include/c++/11/bits/stl_tree.h
  /usr/include/c++/11/bits/stl_map.h

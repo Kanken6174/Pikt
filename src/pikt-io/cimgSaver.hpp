@@ -1,6 +1,7 @@
 #include "cimgLoader.hpp"
+#include <iostream>
 
-class CImgSaver: public ImgProcessor{
+class Grayscale: public ImgProcessor{
 
     virtual bool processImg(Image& img, std::vector<std::string>& arguments) override;
 
@@ -8,13 +9,14 @@ class CImgSaver: public ImgProcessor{
     virtual std::vector<std::string> getSubArgs() override;
 };
 
-bool CImgSaver::processImg(Image &img, std::vector<std::string> &arguments)
+bool Grayscale::processImg(Image &img, std::vector<std::string> &arguments)
 {
-    img.save(arguments.at(0).c_str());
+    std::cout << "Saving image to " << arguments.front() << std::endl;
+    img.save(arguments.front().c_str());
     arguments.erase(arguments.begin());
     return true;
 }
 
-std::string CImgSaver::getMainArg(){ return "save";}
+std::string Grayscale::getMainArg(){ return "save";}
 
-std::vector<std::string> CImgSaver::getSubArgs(){ return {"path"};}
+std::vector<std::string> Grayscale::getSubArgs(){ return {"path"};}

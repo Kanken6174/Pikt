@@ -5,11 +5,10 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
 
 set(local_src
     _factory.cpp
-    cimgLoader.hpp
-    cimgSaver.hpp
+    grayscale.hpp
 )
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../bin/plugins/)
 
-ADD_LIBRARY(pikt_io SHARED ${local_src})
+ADD_LIBRARY(pikt_basics SHARED ${local_src})
 
-target_link_libraries(pikt_io)
+target_link_libraries(pikt_basics)
