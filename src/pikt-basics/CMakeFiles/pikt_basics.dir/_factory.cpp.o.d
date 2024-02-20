@@ -238,6 +238,8 @@ CMakeFiles/pikt_basics.dir/_factory.cpp.o: \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/png.h \
  /usr/include/pnglibconf.h /usr/include/pngconf.h /usr/include/setjmp.h \
+ /usr/include/jpeglib.h /usr/include/x86_64-linux-gnu/jconfig.h \
+ /usr/include/jmorecfg.h \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/sepia.hpp \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/channelswap.hpp \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/channelprod.hpp \

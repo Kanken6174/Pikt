@@ -299,6 +299,9 @@ CMakeFiles/pikt_basics.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/pnglibconf.h \
   /usr/include/pngconf.h \
   /usr/include/setjmp.h \
+  /usr/include/jpeglib.h \
+  /usr/include/x86_64-linux-gnu/jconfig.h \
+  /usr/include/jmorecfg.h \
   sepia.hpp \
   channelswap.hpp \
   channelprod.hpp \
@@ -306,6 +309,8 @@ CMakeFiles/pikt_basics.dir/_factory.cpp.o: _factory.cpp \
 
 
 sepia.hpp:
+
+/usr/include/x86_64-linux-gnu/jconfig.h:
 
 /usr/include/setjmp.h:
 
@@ -356,6 +361,8 @@ channelswap.hpp:
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
+
+/usr/include/jpeglib.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -846,6 +853,8 @@ grayscale.hpp:
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/cfloat:
+
+/usr/include/jmorecfg.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 

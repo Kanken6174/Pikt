@@ -1,5 +1,7 @@
 #pragma once
 #define cimg_use_png
+#define cimg_use_jpeg
+#define cimg_use_jpg
 #include "../dependencies/cimg.h"
 #include <string>
 #include <vector>

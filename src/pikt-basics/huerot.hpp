@@ -25,16 +25,23 @@ bool Huerot::processImg(Image &img, std::vector<std::string> &arguments)
     if (c1 < 0)
         c1 += 360;
 
-    img = img.RGBtoHSL();
-    for (int i = 0; i < img.width(); i++)
+    std::cout << "Huerot: " << c1 << std::endl;
+    
+    //cimg unsigned char to float
+    
+
+    cimg_library::CImg<float> kimg = img.get_normalize(0, 1);
+    kimg = kimg.RGBtoHSL();
+    for (int i = 0; i < kimg.width(); i++)
     {
-        for (int j = 0; j < img.height(); j++)
+        for (int j = 0; j < kimg.height(); j++)
         {
-            img(i, j, 0, 0) = img(i, j, 0, 0) + c1;
+            kimg(i, j, 0) = (kimg(i, j, 0) + c1);
+            //std::cout << (float)kimg(i, j, 0) << " " << (float)kimg(i, j, 1) << " " << (float)kimg(i, j, 2) << std::endl;
         }
     }
 
-    img = img.HSLtoRGB();
+    img = kimg.HSLtoRGB().get_normalize(0, 255);
 
     arguments.erase(arguments.begin(), arguments.begin() + 1);
 
