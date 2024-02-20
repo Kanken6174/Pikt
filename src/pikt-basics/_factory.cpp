@@ -5,6 +5,7 @@
 #include "channelswap.hpp"
 #include "channelprod.hpp"
 #include "huerot.hpp"
+#include "blur.hpp"
 
 
 extern "C" {
@@ -16,6 +17,7 @@ extern "C" {
         dv.push_back(new ChannelSwap());
         dv.push_back(new ChannelProd());
         dv.push_back(new Huerot());
+        dv.push_back(new Blur());
         return dv;
     }
 }

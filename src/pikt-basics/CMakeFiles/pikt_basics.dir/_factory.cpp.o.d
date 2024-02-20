@@ -243,4 +243,6 @@ CMakeFiles/pikt_basics.dir/_factory.cpp.o: \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/sepia.hpp \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/channelswap.hpp \
  /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/channelprod.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/huerot.hpp
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/huerot.hpp \
+ /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/blur.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h

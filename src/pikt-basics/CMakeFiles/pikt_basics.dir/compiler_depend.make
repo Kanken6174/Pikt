@@ -305,7 +305,9 @@ CMakeFiles/pikt_basics.dir/_factory.cpp.o: _factory.cpp \
   sepia.hpp \
   channelswap.hpp \
   channelprod.hpp \
-  huerot.hpp
+  huerot.hpp \
+  blur.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
 
 
 sepia.hpp:
@@ -734,6 +736,8 @@ grayscale.hpp:
 
 /usr/include/wctype.h:
 
+blur.hpp:
+
 /usr/include/dirent.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
@@ -893,6 +897,8 @@ grayscale.hpp:
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
 
 /usr/include/linux/stddef.h:
 
