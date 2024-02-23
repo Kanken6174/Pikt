@@ -12,22 +12,6 @@ class Border: public ImgProcessor{
 
 bool Border::processImg(Image &img, std::vector<std::string> &arguments)
 {
-    float c1 = 0;
-
-    //get the first 3 args as float values
-    try{
-        c1 = std::stof(arguments[0]);
-    }catch(std::exception e){
-        std::cout << "Invalid arguments for Border" << std::endl;
-        return false;
-    }
-
-    if(c1 < 0 || c1 > 5000){
-        std::cout << "Invalid arguments for Border" << std::endl;
-        return false;
-    }
-
-    std::cout << "Border: " << c1 << std::endl;
     
     //cimg unsigned char to float
     
@@ -63,11 +47,9 @@ bool Border::processImg(Image &img, std::vector<std::string> &arguments)
 
     img = kimg + zimg;
 
-    arguments.erase(arguments.begin(), arguments.begin() + 1);
-
     return true;
 }
 
 std::string Border::getMainArg(){ return "border";}
 
-std::vector<std::string> Border::getSubArgs(){ return {"strength"};}
+std::vector<std::string> Border::getSubArgs(){ return {"none"};}

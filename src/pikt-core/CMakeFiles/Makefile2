@@ -113,8 +113,8 @@ extendables/clean: extendables/CMakeFiles/extendables.dir/clean
 # Target rules for target CMakeFiles/pikt.dir
 
 # All Build rule for target.
-CMakeFiles/pikt.dir/all: dependencies/CMakeFiles/dependencies.dir/all
 CMakeFiles/pikt.dir/all: extendables/CMakeFiles/extendables.dir/all
+CMakeFiles/pikt.dir/all: dependencies/CMakeFiles/dependencies.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt.dir/build.make CMakeFiles/pikt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pikt.dir/build.make CMakeFiles/pikt.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/Pikt/src/pikt-core/CMakeFiles --progress-num=5,6,7 "Built target pikt"

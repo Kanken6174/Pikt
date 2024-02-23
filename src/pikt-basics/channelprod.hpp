@@ -42,4 +42,4 @@ bool ChannelProd::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string ChannelProd::getMainArg(){ return "channels";}
 
-std::vector<std::string> ChannelProd::getSubArgs(){ return {"ch1 *", "ch2 *" , "ch3 *"};}
+std::vector<std::string> ChannelProd::getSubArgs(){ return {"red_factor", "green_factor" , "blue_factor"};}

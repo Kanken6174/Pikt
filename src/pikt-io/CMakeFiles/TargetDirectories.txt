@@ -1,3 +1,3 @@
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-io/CMakeFiles/pikt_io.dir
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-io/CMakeFiles/edit_cache.dir
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-io/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/cpp-adv/Pikt/src/pikt-io/CMakeFiles/pikt_io.dir
+/home/kanken/code/cpp-adv/Pikt/src/pikt-io/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/Pikt/src/pikt-io/CMakeFiles/rebuild_cache.dir

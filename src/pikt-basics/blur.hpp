@@ -47,4 +47,4 @@ bool Blur::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Blur::getMainArg(){ return "blur";}
 
-std::vector<std::string> Blur::getSubArgs(){ return {"strength"};}
+std::vector<std::string> Blur::getSubArgs(){ return {"strength (float)"};}

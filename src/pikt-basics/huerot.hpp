@@ -50,4 +50,4 @@ bool Huerot::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Huerot::getMainArg(){ return "huerot";}
 
-std::vector<std::string> Huerot::getSubArgs(){ return {"ch1 *", "ch2 *" , "ch3 *"};}
+std::vector<std::string> Huerot::getSubArgs(){ return {"hue_angle (integer)"};}

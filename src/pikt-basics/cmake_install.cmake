@@ -1,4 +1,4 @@
-# Install script for directory: /home/kanken/code/tcpp-adv/Pikt/src/pikt-basics
+# Install script for directory: /home/kanken/code/cpp-adv/Pikt/src/pikt-basics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kanken/code/tcpp-adv/Pikt/src/pikt-basics/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kanken/code/cpp-adv/Pikt/src/pikt-basics/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,8 +5,8 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/stdc-predef.h \
   cimgSaver.hpp \
   cimgLoader.hpp \
-  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
-  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
+  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
+  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
   /usr/include/c++/11/cstdio \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -234,6 +234,9 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/pnglibconf.h \
   /usr/include/pngconf.h \
   /usr/include/setjmp.h \
+  /usr/include/jpeglib.h \
+  /usr/include/x86_64-linux-gnu/jconfig.h \
+  /usr/include/jmorecfg.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -350,6 +353,8 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: _factory.cpp \
 
 /usr/include/c++/11/ext/atomicity.h:
 
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -359,8 +364,6 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: _factory.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -394,8 +397,6 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: _factory.cpp \
 
 /usr/include/c++/11/new:
 
-/usr/include/linux/close_range.h:
-
 cimgSaver.hpp:
 
 /usr/include/c++/11/tuple:
@@ -406,9 +407,17 @@ cimgSaver.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/linux/limits.h:
+
 /usr/include/X11/Xlib.h:
 
 /usr/include/c++/11/bits/specfun.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/jmorecfg.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
@@ -428,13 +437,9 @@ cimgSaver.hpp:
 
 /usr/include/X11/Xosdefs.h:
 
-/usr/include/c++/11/cwchar:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -478,29 +483,15 @@ cimgSaver.hpp:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/11/limits:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/stdio.h:
-
-/usr/include/X11/Xfuncproto.h:
-
-/usr/include/c++/11/limits:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
@@ -512,10 +503,6 @@ cimgSaver.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/linux/limits.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/11/cfloat:
@@ -524,11 +511,45 @@ cimgSaver.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/stdio.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/11/cwchar:
+
+/home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -554,23 +575,15 @@ cimgSaver.hpp:
 
 /usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/c++/11/ext/numeric_traits.h:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/features.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/c++/11/tr1/poly_hermite.tcc:
+/usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
 
 cimgLoader.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
-
-/usr/include/c++/11/unordered_map:
-
-/usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
@@ -581,12 +594,6 @@ cimgLoader.hpp:
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/c++/11/cstdio:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -638,6 +645,8 @@ cimgLoader.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
 _factory.cpp:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
@@ -676,8 +685,6 @@ _factory.cpp:
 
 /usr/include/setjmp.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -701,6 +708,8 @@ _factory.cpp:
 /usr/include/c++/11/bits/exception.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/jconfig.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
@@ -768,7 +777,9 @@ _factory.cpp:
 
 /usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/c++/11/unordered_map:
+
+/usr/include/c++/11/cctype:
 
 /usr/include/stdc-predef.h:
 
@@ -799,8 +810,6 @@ _factory.cpp:
 /usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/vector:
-
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -882,6 +891,10 @@ _factory.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/jpeglib.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
@@ -895,7 +908,3 @@ _factory.cpp:
 /usr/include/c++/11/iosfwd:
 
 /usr/include/ctype.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:

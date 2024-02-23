@@ -24,4 +24,4 @@ bool Grayscale::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Grayscale::getMainArg(){ return "grayscale";}
 
-std::vector<std::string> Grayscale::getSubArgs(){ return {"path"};}
+std::vector<std::string> Grayscale::getSubArgs(){ return {"none"};}

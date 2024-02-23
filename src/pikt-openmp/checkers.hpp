@@ -46,4 +46,4 @@ bool Checker::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Checker::getMainArg(){ return "checker";}
 
-std::vector<std::string> Checker::getSubArgs(){ return {"strength"};}
+std::vector<std::string> Checker::getSubArgs(){ return {"checker_size (integer)"};}

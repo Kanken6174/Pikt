@@ -6,7 +6,6 @@
 #include "channelprod.hpp"
 #include "huerot.hpp"
 #include "blur.hpp"
-#include "borders.hpp"
 
 extern "C" {
     std::vector<ImgProcessor*> generateProcessors(){

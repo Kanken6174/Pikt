@@ -1,0 +1,3 @@
+/home/kanken/code/cpp-adv/Pikt/src/pikt-thread/CMakeFiles/pikt_thread.dir
+/home/kanken/code/cpp-adv/Pikt/src/pikt-thread/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/Pikt/src/pikt-thread/CMakeFiles/rebuild_cache.dir

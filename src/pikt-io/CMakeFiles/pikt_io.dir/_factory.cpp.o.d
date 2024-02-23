@@ -1,10 +1,10 @@
 CMakeFiles/pikt_io.dir/_factory.cpp.o: \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/_factory.cpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-io/_factory.cpp \
  /usr/include/stdc-predef.h \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/cimgSaver.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/cimgLoader.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/../pikt-core/extendables/imgProcessor.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-io/../pikt-core/extendables/../dependencies/cimg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-io/cimgSaver.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-io/cimgLoader.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-io/../pikt-core/extendables/imgProcessor.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-io/../pikt-core/extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -190,8 +190,9 @@ CMakeFiles/pikt_io.dir/_factory.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/png.h /usr/include/pnglibconf.h /usr/include/pngconf.h \
- /usr/include/setjmp.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/setjmp.h /usr/include/jpeglib.h \
+ /usr/include/x86_64-linux-gnu/jconfig.h /usr/include/jmorecfg.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
  /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/wchar.h \

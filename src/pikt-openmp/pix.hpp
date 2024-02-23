@@ -52,4 +52,4 @@ bool Pix::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Pix::getMainArg(){ return "pix";}
 
-std::vector<std::string> Pix::getSubArgs(){ return {"strength"};}
+std::vector<std::string> Pix::getSubArgs(){ return {"pixel_size (integer)"};}

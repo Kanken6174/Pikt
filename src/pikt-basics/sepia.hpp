@@ -26,4 +26,4 @@ bool Sepia::processImg(Image &img, std::vector<std::string> &arguments)
 
 std::string Sepia::getMainArg(){ return "old";}
 
-std::vector<std::string> Sepia::getSubArgs(){ return {"path"};}
+std::vector<std::string> Sepia::getSubArgs(){ return {"none"};}
