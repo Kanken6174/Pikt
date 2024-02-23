@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/plugin.cpp" "extendables/CMakeFiles/extendables.dir/plugin.cpp.o" "gcc" "extendables/CMakeFiles/extendables.dir/plugin.cpp.o.d"
-  "/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/pluginManager.cpp" "extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o" "gcc" "extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o.d"
+  "/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/plugin.cpp" "extendables/CMakeFiles/extendables.dir/plugin.cpp.o" "gcc" "extendables/CMakeFiles/extendables.dir/plugin.cpp.o.d"
+  "/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/pluginManager.cpp" "extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o" "gcc" "extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o.d"
   )
 
 # Targets to which this target links.

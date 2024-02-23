@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/pikt.dir/main.cpp.o CMakeFiles/pikt.dir/cmdParser.cpp.o -o /home/kanken/code/tcpp-adv/Pikt/bin/pikt  extendables/libextendables.a dependencies/libdependencies.a 
+/usr/bin/c++ -rdynamic CMakeFiles/pikt.dir/main.cpp.o CMakeFiles/pikt.dir/cmdParser.cpp.o -o /home/kanken/code/cpp-adv/Pikt/bin/pikt  extendables/libextendables.a dependencies/libdependencies.a -lgomp -Wl,-Bstatic -lpthread -Wl,-Bdynamic 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kanken/code/tcpp-adv/Pikt/src/pikt-openmp/_factory.cpp" "CMakeFiles/pikt_openmp.dir/_factory.cpp.o" "gcc" "CMakeFiles/pikt_openmp.dir/_factory.cpp.o.d"
+  "/home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/_factory.cpp" "CMakeFiles/pikt_openmp.dir/_factory.cpp.o" "gcc" "CMakeFiles/pikt_openmp.dir/_factory.cpp.o.d"
   )
 
 # Targets to which this target links.

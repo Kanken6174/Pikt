@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/kanken/code/tcpp-adv/Pikt/bin/plugins/libpikt_openmp.pdb"
-  "/home/kanken/code/tcpp-adv/Pikt/bin/plugins/libpikt_openmp.so"
+  "/home/kanken/code/cpp-adv/Pikt/bin/plugins/libpikt_openmp.pdb"
+  "/home/kanken/code/cpp-adv/Pikt/bin/plugins/libpikt_openmp.so"
   "CMakeFiles/pikt_openmp.dir/_factory.cpp.o"
   "CMakeFiles/pikt_openmp.dir/_factory.cpp.o.d"
 )

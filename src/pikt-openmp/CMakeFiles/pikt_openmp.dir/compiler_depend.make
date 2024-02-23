@@ -187,8 +187,8 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   border.hpp \
-  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
-  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
+  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
+  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
   /usr/include/c++/11/cstdarg \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
@@ -288,6 +288,7 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/x86_64-linux-gnu/bits/dirent.h \
   /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
   /usr/include/fnmatch.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   /usr/include/X11/Xlib.h \
   /usr/include/X11/X.h \
   /usr/include/X11/Xfuncproto.h \
@@ -302,8 +303,13 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/jpeglib.h \
   /usr/include/x86_64-linux-gnu/jconfig.h \
   /usr/include/jmorecfg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
+  checkers.hpp \
+  pix.hpp
 
+
+pix.hpp:
+
+checkers.hpp:
 
 /usr/include/x86_64-linux-gnu/jconfig.h:
 
@@ -332,6 +338,8 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: _factory.cpp \
 /usr/include/linux/close_range.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -448,8 +456,6 @@ _factory.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/c++/11/cwchar:
 
 /usr/include/unistd.h:
 
@@ -669,8 +675,6 @@ _factory.cpp:
 
 /usr/include/c++/11/iosfwd:
 
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -789,9 +793,11 @@ border.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
 
-/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
+/usr/include/c++/11/cwchar:
+
+/home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 

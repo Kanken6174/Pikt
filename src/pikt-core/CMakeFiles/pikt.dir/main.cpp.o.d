@@ -1,5 +1,5 @@
 CMakeFiles/pikt.dir/main.cpp.o: \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/main.cpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,8 +146,8 @@ CMakeFiles/pikt.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/pluginManager.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/plugin.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/pluginManager.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/plugin.hpp \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
@@ -176,8 +176,8 @@ CMakeFiles/pikt.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/imgProcessor.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/./extendables/../dependencies/cimg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/imgProcessor.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/./extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -250,11 +250,13 @@ CMakeFiles/pikt.dir/main.cpp.o: \
  /usr/include/linux/close_range.h /usr/include/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h /usr/include/fnmatch.h \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/png.h \
- /usr/include/pnglibconf.h /usr/include/pngconf.h /usr/include/setjmp.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
+ /usr/include/png.h /usr/include/pnglibconf.h /usr/include/pngconf.h \
+ /usr/include/setjmp.h /usr/include/jpeglib.h \
+ /usr/include/x86_64-linux-gnu/jconfig.h /usr/include/jmorecfg.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/memory \
@@ -265,4 +267,4 @@ CMakeFiles/pikt.dir/main.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/cmdParser.hpp
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/cmdParser.hpp

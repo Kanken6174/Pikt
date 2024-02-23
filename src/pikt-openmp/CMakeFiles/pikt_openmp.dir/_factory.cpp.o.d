@@ -1,5 +1,5 @@
 CMakeFiles/pikt_openmp.dir/_factory.cpp.o: \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-openmp/_factory.cpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/_factory.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -150,9 +150,9 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-openmp/border.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-openmp/../pikt-core/extendables/imgProcessor.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-openmp/../pikt-core/extendables/../dependencies/cimg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/border.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/../pikt-core/extendables/imgProcessor.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/../pikt-core/extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -233,10 +233,12 @@ CMakeFiles/pikt_openmp.dir/_factory.cpp.o: \
  /usr/include/linux/close_range.h /usr/include/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h /usr/include/fnmatch.h \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
- /usr/include/X11/keysymdef.h /usr/include/png.h \
- /usr/include/pnglibconf.h /usr/include/pngconf.h /usr/include/setjmp.h \
- /usr/include/jpeglib.h /usr/include/x86_64-linux-gnu/jconfig.h \
- /usr/include/jmorecfg.h /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h /usr/include/X11/Xlib.h \
+ /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
+ /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
+ /usr/include/png.h /usr/include/pnglibconf.h /usr/include/pngconf.h \
+ /usr/include/setjmp.h /usr/include/jpeglib.h \
+ /usr/include/x86_64-linux-gnu/jconfig.h /usr/include/jmorecfg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/checkers.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-openmp/pix.hpp

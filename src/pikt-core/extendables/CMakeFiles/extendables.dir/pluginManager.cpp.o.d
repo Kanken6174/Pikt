@@ -1,8 +1,8 @@
 extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o: \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/pluginManager.cpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/pluginManager.cpp \
  /usr/include/stdc-predef.h \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/pluginManager.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/plugin.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/pluginManager.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/plugin.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -179,8 +179,8 @@ extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/../dependencies/cimg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -258,8 +258,9 @@ extendables/CMakeFiles/extendables.dir/pluginManager.cpp.o: \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/png.h \
  /usr/include/pnglibconf.h /usr/include/pngconf.h /usr/include/setjmp.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/jpeglib.h /usr/include/x86_64-linux-gnu/jconfig.h \
+ /usr/include/jmorecfg.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \

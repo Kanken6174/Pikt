@@ -8,6 +8,8 @@ set(local_src
 )
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../bin/plugins/)
 
+find_package(OpenMP)
+
 ADD_LIBRARY(pikt_openmp SHARED ${local_src})
 
-target_link_libraries(pikt_openmp)
+target_link_libraries(pikt_openmp PUBLIC OpenMP::OpenMP_CXX)

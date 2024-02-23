@@ -15,6 +15,8 @@ set(local_source_files
     cmdParser.hpp
 )
 
+find_package(OpenMP)
+
 add_subdirectory(extendables)
 add_subdirectory(dependencies)
 
@@ -23,5 +25,9 @@ add_subdirectory(dependencies)
 add_executable(pikt ${local_source_files})
 
 target_link_libraries(pikt extendables dependencies)
+
+if (OpenMP_CXX_FOUND)
+    target_link_libraries(pikt OpenMP::OpenMP_CXX)
+endif()
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")

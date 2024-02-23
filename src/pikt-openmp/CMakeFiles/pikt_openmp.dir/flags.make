@@ -6,5 +6,5 @@ CXX_DEFINES = -Dpikt_openmp_EXPORTS
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -fPIC
+CXX_FLAGS = -fPIC -fopenmp
 
