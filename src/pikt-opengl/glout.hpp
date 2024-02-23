@@ -53,7 +53,7 @@ bool GlOut::processImg(Image &img, std::vector<std::string> &arguments)
 
         glRasterPos2i(-1, 1);
 
-        glDrawPixels(img.height(), img.width(), GL_RGB, GL_UNSIGNED_BYTE, pixels);
+        glDrawPixels(img.height(), img.width(), GL_RGB, GL_UNSIGNED_SHORT, pixels);
 
         glfwSwapBuffers(window);
 
