@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libpikt_gl.so -o /home/kanken/code/cpp-adv/Pikt/bin/plugins/libpikt_gl.so CMakeFiles/pikt_gl.dir/_factory.cpp.o  -lGLEW /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 -lGLEW -lOpenGL -lGLX -lGLU -lgomp -Wl,-Bstatic -lpthread -Wl,-Bdynamic 

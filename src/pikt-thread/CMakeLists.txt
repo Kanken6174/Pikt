@@ -1,4 +1,4 @@
-PROJECT(pikt_openmp)
+PROJECT(pikt_thread)
 CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 set(CMAKE_CXX_FLAGS_DEBUG "-g -Ofast -fPIC -ldl")
 set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
