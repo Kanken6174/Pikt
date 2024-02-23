@@ -309,7 +309,10 @@ CMakeFiles/pikt_thread.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h
 
 CMakeFiles/pikt_thread.dir/checkersthWorker.cpp.o: checkersthWorker.cpp \
   /usr/include/stdc-predef.h \
@@ -618,10 +621,15 @@ CMakeFiles/pikt_thread.dir/checkersthWorker.cpp.o: checkersthWorker.cpp \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h
 
 
 checkersthWorker.cpp:
+
+/usr/include/c++/11/mutex:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -876,6 +884,8 @@ _factory.cpp:
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
@@ -1214,6 +1224,8 @@ checkersth.hpp:
 /usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 

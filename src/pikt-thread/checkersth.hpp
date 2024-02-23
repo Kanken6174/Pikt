@@ -24,15 +24,12 @@ bool CheckerTh::processImg(Image &img, std::vector<std::string> &arguments)
     }
 
     std::vector<std::thread> workers;
-
-    for(int i = 0; i < 40; i++){
-        workers.push_back(std::thread([i, &img, checkerthSize, width, height](){
+    std::mutex imgMutex;
+    for(int i = 0; i < 2; i++){
+        //just a lambda that creates and runs the workers
+        workers.push_back(std::thread([i, &img, checkerthSize, width, height, &imgMutex](){    
             CheckersWorker worker;
-            for(int x = i % 2 * checkerthSize; x < width; x += 2 * checkerthSize){
-                for(int y = i / 2 * checkerthSize; y < height; y += 2 * checkerthSize){
-                    worker.work(img, x, y, checkerthSize);
-                }
-            }
+            worker.work(img, rand()%width, rand()%height, checkerthSize, std::ref(imgMutex));
         }));
     }
 
