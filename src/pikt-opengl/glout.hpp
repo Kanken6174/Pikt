@@ -16,14 +16,14 @@ bool GlOut::processImg(Image &img, std::vector<std::string> &arguments)
 {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
-        return -1;
+        return false;
     }
 
     GLFWwindow* window = glfwCreateWindow(1280, 720, "glout view", NULL, NULL);
     if (!window) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
-        return -1;
+        return false;
     }
 
     glfwMakeContextCurrent(window);
@@ -32,17 +32,27 @@ bool GlOut::processImg(Image &img, std::vector<std::string> &arguments)
     if (err != GLEW_OK) {
         std::cerr << "Failed to initialize GLEW: " << glewGetErrorString(err) << "\n";
         glfwTerminate();
-        return -1;
+        return false;
     }
+
+    //img = img.permute_axes("xyz");
 
     //img to raw pixel array
     unsigned char* pixels = img.data();
+
+    // Rearrange pixel data to RGBRGB format
+    int size = img.width() * img.height();
+    unsigned char* interleavedPixels = new unsigned char[size * 3];
+    for (int i = 0; i < size; ++i) {
+        interleavedPixels[i * 3] = pixels[i];               // Red component
+        interleavedPixels[i * 3 + 1] = pixels[i + size];    // Green component
+        interleavedPixels[i * 3 + 2] = pixels[i + size * 2];// Blue component
+    }
 
     //prepare the image
     //glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     //glPixelStorei(GL_PACK_ALIGNMENT, 1);
     glPixelZoom(1, -1);
-
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -53,13 +63,15 @@ bool GlOut::processImg(Image &img, std::vector<std::string> &arguments)
 
         glRasterPos2i(-1, 1);
 
-        glDrawPixels(img.height(), img.width(), GL_RGB, GL_UNSIGNED_SHORT, pixels);
+        // Pass interleaved pixel data to OpenGL
+        glDrawPixels(img.width(), img.height(), GL_RGB, GL_UNSIGNED_BYTE, interleavedPixels);
 
         glfwSwapBuffers(window);
 
         glfwPollEvents();
     }
 
+    delete[] interleavedPixels; // Don't forget to free the memory
     glfwTerminate();
     return true;
 }

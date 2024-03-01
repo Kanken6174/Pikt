@@ -187,8 +187,8 @@ CMakeFiles/pikt_gl.dir/_factory.cpp.o: _factory.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   glout.hpp \
-  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
-  /home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
+  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp \
+  /home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h \
   /usr/include/c++/11/cstdarg \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
@@ -342,8 +342,6 @@ CMakeFiles/pikt_gl.dir/_factory.cpp.o: _factory.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
@@ -459,6 +457,8 @@ _factory.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/c++/11/cwchar:
 
 /usr/include/unistd.h:
 
@@ -682,6 +682,8 @@ _factory.cpp:
 
 /usr/include/c++/11/iosfwd:
 
+/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -800,11 +802,9 @@ _factory.cpp:
 
 glout.hpp:
 
-/home/kanken/code/cpp-adv/Pikt/src/pikt-core/extendables/imgProcessor.hpp:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/c++/11/cwchar:
-
-/home/kanken/code/cpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
+/home/kanken/code/tcpp-adv/Pikt/src/pikt-core/dependencies/cimg.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
