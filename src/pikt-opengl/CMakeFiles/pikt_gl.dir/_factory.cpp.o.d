@@ -1,5 +1,5 @@
 CMakeFiles/pikt_gl.dir/_factory.cpp.o: \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-opengl/_factory.cpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-opengl/_factory.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -150,9 +150,9 @@ CMakeFiles/pikt_gl.dir/_factory.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-opengl/glout.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-opengl/../pikt-core/extendables/imgProcessor.hpp \
- /home/kanken/code/tcpp-adv/Pikt/src/pikt-opengl/../pikt-core/extendables/../dependencies/cimg.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-opengl/glout.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-opengl/../pikt-core/extendables/imgProcessor.hpp \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-opengl/../pikt-core/extendables/../dependencies/cimg.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -241,4 +241,5 @@ CMakeFiles/pikt_gl.dir/_factory.cpp.o: \
  /usr/include/setjmp.h /usr/include/jpeglib.h \
  /usr/include/x86_64-linux-gnu/jconfig.h /usr/include/jmorecfg.h \
  /usr/include/GL/glew.h /usr/include/c++/11/cstddef /usr/include/GL/glu.h \
- /usr/include/GL/gl.h /usr/include/GLFW/glfw3.h
+ /usr/include/GL/gl.h /usr/include/GLFW/glfw3.h \
+ /home/kanken/code/cpp-adv/Pikt/src/pikt-opengl/gloutGP.hpp

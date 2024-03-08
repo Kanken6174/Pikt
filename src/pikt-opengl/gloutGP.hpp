@@ -3,20 +3,20 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-class GlOut : public ImgProcessor {
+class GlOutGP : public ImgProcessor {
 public:
     virtual bool processImg(Image& img, std::vector<std::string>& arguments) override;
     virtual std::string getMainArg() override;
     virtual std::vector<std::string> getSubArgs() override;
 };
 
-bool GlOut::processImg(Image& img, std::vector<std::string>& arguments) {
+bool GlOutGP::processImg(Image& img, std::vector<std::string>& arguments) {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return false;
     }
 
-    GLFWwindow* window = glfwCreateWindow(img.height(), img.width(), "glout view", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(img.height(), img.width(), "GlOutGP view", NULL, NULL);
     if (!window) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
@@ -33,25 +33,15 @@ bool GlOut::processImg(Image& img, std::vector<std::string>& arguments) {
     }
     unsigned char* pixels = img.data();
 
-    GLuint textureR, textureG, textureB;
-    glGenTextures(1, &textureR);
-    glGenTextures(1, &textureG);
-    glGenTextures(1, &textureB);
-
-    glBindTexture(GL_TEXTURE_2D, textureR);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, img.width(), img.height(), 0, GL_RED, GL_UNSIGNED_BYTE, img.data());
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    glBindTexture(GL_TEXTURE_2D, textureG);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, img.width(), img.height(), 0, GL_RED, GL_UNSIGNED_BYTE, img.data() + img.width() * img.height());
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    glBindTexture(GL_TEXTURE_2D, textureB);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, img.width(), img.height(), 0, GL_RED, GL_UNSIGNED_BYTE, img.data() + 2 * img.width() * img.height());
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // Rearrange pixel data to RGBRGB format (CIMG is a planar system)
+    int size = img.width() * img.height();
+    unsigned char* interleavedPixels = new unsigned char[size * 3];
+    #pragma parrallel for
+    for (int i = 0; i < size; ++i) {
+        interleavedPixels[i * 3] = pixels[i];              
+        interleavedPixels[i * 3 + 1] = pixels[i + size];   
+        interleavedPixels[i * 3 + 2] = pixels[i + size * 2];
+    }
 
     // Shader setup
     const char* vertexShaderSource = "#version 330 core\n"
@@ -64,18 +54,14 @@ bool GlOut::processImg(Image& img, std::vector<std::string>& arguments) {
                                      "    TexCoord = vec2(aTexCoord.x, 1.0 - aTexCoord.y);\n"
                                      "}\0";
     const char* fragmentShaderSource = "#version 330 core\n"
-    "in vec2 TexCoord;\n"
-    "out vec4 FragColor;\n"
-    "uniform sampler2D texR;\n"
-    "uniform sampler2D texG;\n"
-    "uniform sampler2D texB;\n"
-    "void main()\n"
-    "{\n"
-    "  float r = texture(texR, TexCoord).r;\n"
-    "  float g = texture(texG, TexCoord).r;\n"
-    "  float b = texture(texB, TexCoord).r;\n"
-    "  FragColor = vec4(r, g, b, 1.0);\n"
-    "}\0";
+                                       "in vec2 TexCoord;\n"
+                                       "out vec4 FragColor;\n"
+                                       "uniform sampler2D tex;\n"
+                                       "void main()\n"
+                                       "{\n"
+                                       "    vec3 color = texture(tex, TexCoord).rgb;\n"
+                                       "    FragColor = vec4(color, 1.0);\n"
+                                       "}\0";
 
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
@@ -92,22 +78,13 @@ bool GlOut::processImg(Image& img, std::vector<std::string>& arguments) {
     // Check for linking errors...
 
     glUseProgram(shaderProgram);
-
-    GLint texRLoc = glGetUniformLocation(shaderProgram, "texR");
-    GLint texGLoc = glGetUniformLocation(shaderProgram, "texG");
-    GLint texBLoc = glGetUniformLocation(shaderProgram, "texB");
-
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, textureR);
-    glUniform1i(texRLoc, 0);
-
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, textureG);
-    glUniform1i(texGLoc, 1);
-
-    glActiveTexture(GL_TEXTURE2);
-    glBindTexture(GL_TEXTURE_2D, textureB);
-    glUniform1i(texBLoc, 2);
+    
+    GLuint texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img.width(), img.height(), 0, GL_RGB, GL_UNSIGNED_BYTE, interleavedPixels);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     // VBO setup
     float vertices[] = {
@@ -170,11 +147,14 @@ bool GlOut::processImg(Image& img, std::vector<std::string>& arguments) {
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
 
+    glDeleteTextures(1, &texture);
+    delete[] interleavedPixels;
+
     glfwTerminate();
 
     return true;
 }
 
-std::string GlOut::getMainArg() { return "glout"; }
+std::string GlOutGP::getMainArg() { return "gloutgp"; }
 
-std::vector<std::string> GlOut::getSubArgs() { return {"none"}; }
+std::vector<std::string> GlOutGP::getSubArgs() { return {"none"}; }
